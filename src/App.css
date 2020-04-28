@@ -1,17 +1,30 @@
 .App {
   text-align: center;
+  background-color: ; 
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  color: #ea593e;
+  font-family: 'Merriweather', serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+p {
+  font-family: 'Roboto', sans-serif;
 }
+
+
+
+/* Colours:
+juno orange: #ez593a
+purple: #221c38
+light grey: 255, 255, 255;
+light green: ebf3f1
+font colour: 4a455c */
+/* light orange: #edd7c8; */
+
+/* font-family: 'Roboto', sans-serif;
+font-family: 'Merriweather', serif; */
+
 
 .App-header {
   background-color: #282c34;
@@ -24,15 +37,49 @@
   color: white;
 }
 
-.App-link {
+/* .App-link {
   color: #61dafb;
+} */
+
+/* FORM STYLES */
+
+.form-container {
+  border: 1px solid  #ea593e;
+  width: 80%;
+  margin: 0 auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input {
+  border: none;
+  height: 15px;
+  display: inline-block;
+}
+
+
+textarea {
+  width: 80%;
+  border: none;
+  height: 200px;
+  margin: 10px 0;
+  resize: none;
+}
+
+button {
+  background-color: #ea593e;
+  color: aliceblue;
+  height: 30px;
+  border: none;
+  display: block;
+  margin: 0 auto;
+}
+
+
+
+footer {
+  background-color: #ea593e;
+  text-align: center;
+}
+
+footer p {
+  color: white;
 }
