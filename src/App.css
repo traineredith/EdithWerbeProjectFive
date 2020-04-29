@@ -64,7 +64,7 @@ textarea {
   resize: none;
 }
 
-button {
+.submitBtn {
   background-color: #ea593e;
   color: aliceblue;
   height: 30px;
@@ -73,7 +73,23 @@ button {
   margin: 0 auto;
 }
 
+/* bulletin Board */
 
+.postsBoard {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.posts {
+  /* border: 1px solid #ea593e; */
+  margin: 10px;
+  padding: 5px;
+  background-color: #edd7c8;
+  box-shadow: 1px #ea593e;
+
+}
 
 footer {
   background-color: #ea593e;
