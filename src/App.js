@@ -15,9 +15,12 @@ class App extends Component {
       allMesssages: [],
       messageTo:'',
       messageFrom:'',
-      message: ''
+      message: '',
+      likes: 0
     }
   }
+
+  
 
   handleChange = (event) => {
     this.setState({ message: event.target.value })
@@ -56,6 +59,7 @@ class App extends Component {
       messageFrom: this.state.messageFrom,
       likes: 0
     });
+
     // here we reset the state to an empty string
     this.setState({ 
       message: "",
@@ -63,7 +67,6 @@ class App extends Component {
       messageFrom: ""
     })
   }
-
 
   componentDidMount() {
     const dbRef = firebase.database().ref();
@@ -77,8 +80,9 @@ class App extends Component {
       //data is an object, so we iterate through it using a for in loop the message 
       for (let key in data) {
 
-        // inside the loop, we push each note to an array we already created inside the .on() function called newState
+        // inside the loop, we push each message to an array we already created inside the .on() function called newState
         newState.unshift(data[key]);
+        console.log("this is the data" + data[key]);
       }
       // then, we call this.setState in order to update our component's state using the local array newState
       this.setState({
@@ -87,6 +91,9 @@ class App extends Component {
 
     });
   }
+
+  
+
 
   render() {
     return (
@@ -112,8 +119,12 @@ class App extends Component {
             id="newMessage"
             onChange={this.handleChange} />
 
-          <Button onClick={this.handleClick} />
+          <Button 
+          onClick={this.handleClick}
+            handleLikeClick={this.handleLikeClick}
+            />
         </form>
+        
 
         <div className="postsBoard" id="postsBoard">
           {this.state.allMesssages.map((newMessage) => {
@@ -122,7 +133,11 @@ class App extends Component {
               <p>To: {newMessage.messageTo}</p>
               <p>{newMessage.message}</p> 
               <p>From: {newMessage.messageFrom}</p>
-              <LikeButton />
+              {/* < i className="fas fa-heart" >{newMessage.likes}</i > */}
+
+              <LikeButton 
+              
+              />
             </div>
             )    
           })}
