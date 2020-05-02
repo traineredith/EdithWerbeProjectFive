@@ -7,7 +7,6 @@ const Button = (props) => {
             style={props.style}
             className="submitBtn"
             onClick={props.action} >
-            {props.title}
             Submit
         </button>)
 }

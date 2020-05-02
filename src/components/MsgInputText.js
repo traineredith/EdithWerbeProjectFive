@@ -8,6 +8,7 @@ const TextArea = (props) => (
             message={props.message}
             onChange={props.handleChange}
             placeholder={props.placeholder}
+            uniqueKey={props.uniqueKey}
             />
     </div>
 );

@@ -12,6 +12,8 @@ import React from 'react';
                     value={props.value}
                     onChange={props.onChange}
                     placeholder={props.placeholder}
+                    uniqueKey={props.uniqueKey}
+
                  />
             </div>
         )

@@ -1,18 +1,58 @@
 .App {
   text-align: center;
-  background-color: ; 
+  /* background-color: ;  */
+}
+
+.title {
+  display: flex;
+  flex-direction: row;
+  /* margin-top: 30px; */
+  padding-top: 20px;
+  width: 70%;
+  /* height: 20px; */
+  /* border: 1px solid red; */
+  margin: 0 auto;
+  /* height: 40px; */
+  align-items: center;
+}
+
+.title img {
+/* align-self: stretch; */
+width: 45%;
+object-fit: contain;
+padding: 0 20px;
+/* border: 1px solid red; */
 }
 
 h1 {
   color: #ea593e;
   font-family: 'Merriweather', serif;
+  font-size: 4.2rem;
+  padding: 0;
+  margin: 0;
+  /* width: 50%; */
 }
 
 p {
   font-family: 'Roboto', sans-serif;
 }
 
+.cohort26 {
+  font-size: 1.5rem;
+  color: #ea593e;
+  margin-bottom: 6px;
+}
 
+.covidCohort {
+  color: #ea593e;
+  font-size: 1.3rem;
+  margin-top: 0;
+}
+
+.errorMessage {
+  color: #ea593e;
+  text-transform: uppercase;
+}
 
 /* Colours:
 juno orange: #ez593a
@@ -25,7 +65,7 @@ font colour: 4a455c */
 /* font-family: 'Roboto', sans-serif;
 font-family: 'Merriweather', serif; */
 
-
+/* 
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -35,26 +75,38 @@ font-family: 'Merriweather', serif; */
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+} */
+
+main {
+  display: flex;
 }
 
-/* .App-link {
-  color: #61dafb;
-} */
+.motivation {
+  width: 50%;
+}
 
 /* FORM STYLES */
 
 .form-container {
-  border: 1px solid  #ea593e;
-  width: 80%;
+  /* border: 1px solid  #ea593e; */
+  width: 50%;
   margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+
 }
 
 input {
   border: none;
   height: 15px;
-  display: inline-block;
+  align-self: flex-start;
+
 }
 
+.toInput {
+  align-self: flex-end;
+}
 
 textarea {
   width: 80%;
@@ -62,6 +114,8 @@ textarea {
   height: 200px;
   margin: 10px 0;
   resize: none;
+  align-self: center;
+  padding: 10px;
 }
 
 .submitBtn {
@@ -71,29 +125,55 @@ textarea {
   border: none;
   display: block;
   margin: 0 auto;
+  align-self: flex-end;
 }
 
-/* .likes {
-  background-image: url('./assets/safiEmoji_128x128.png');
-  height: 20px;
-} */
+.likes {
+border: none;
+background-color: #edd7c8;
+}
+
+.likes img {
+  height: 25px;
+}
 
 /* bulletin Board */
 
 .postsBoard {
   margin-top: 10px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  column-count: 2;
   flex-wrap: wrap;
+  column-gap: 10px;
+
 }
 
 .posts {
-  /* border: 1px solid #ea593e; */
+  max-width: 300px;
+  height: 100%;
   margin: 10px;
-  padding: 5px;
+  padding: 10px;
   background-color: #edd7c8;
   box-shadow: 1px #ea593e;
+  display: flex;
+  flex-direction: column;
 
+}
+
+.toPrefix {
+  align-self: flex-start;
+  font-family: 'Merriweather', serif;
+
+}
+
+.fromPrefix {
+    align-self: flex-end;
+    font-family: 'Merriweather', serif;
+}
+
+.postedMessage {
+  margin: 0 15px;
 }
 
 footer {
