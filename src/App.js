@@ -15,6 +15,7 @@ class App extends Component {
       messageTo: '',
       messageFrom: '',
       message: '',
+      // likes: 0
     }
   }
 
@@ -71,11 +72,15 @@ class App extends Component {
       // .val() is a Firebase method that gets us the information we want
       const data = response.val();
       //data is an object, so we iterate through it using a for in loop the message 
+      console.log(data);
       for (let key in data) {
 
         // inside the loop, we push each note to an array we already created inside the .on() function called newState
         // inside the loop, we push each message to an array we already created inside the .on() function called newState
+        let currentObj = data[key];
+        currentObj['id'] = key;
         newState.unshift(data[key]);
+        console.log(data[key])
       }
       // then, we call this.setState in order to update our component's state using the local array newState
       this.setState({
@@ -102,7 +107,7 @@ class App extends Component {
             value={this.state.messageFrom} />
 
           <textarea
-            placeholder='Leave a lovely message'
+            placeholder='Leave a message, joke or jibe for your belove student or mentor'
             type="text"
             id="newMessage"
             onChange={this.handleChange} 
@@ -118,13 +123,15 @@ class App extends Component {
 
         <div className="postsBoard" id="postsBoard">
           {this.state.allMesssages.map((newMessage) => {
+            console.log();
             return (
               <div className="posts">
                 <p className="toPrefix">To: {newMessage.messageTo}</p>
                 <p>{newMessage.message}</p>
                 <p className="fromPrefix">From: {newMessage.messageFrom}</p>
                 <LikeButton
-                  uniqueKey={newMessage.firebaseKey}
+                  uniqueKey={newMessage.id}
+                  likes={newMessage.likes}
                   />
               </div>
             )

@@ -10,22 +10,20 @@ constructor(){
     }
 }
 
-incrementLikes = () => {
-        let newLike = this.state.likes + 1;
-        this.setState({
-            likes: newLike
-        });
-        console.log(this.state.likes);
-        const keyToUpdate = this.props.uniqueKey;
-        const dbRef = firebase.database().ref(keyToUpdate);
-
-        dbRef.update({  
-            likes: this.state.likes
-        });
+incrementLikes = (props) => {
+    let newLike = this.props.likes + 1;
+    console.log("likes " + this.props.likes);
+    // this.setState({
+    //     likes: newLike
+    // });
+    const uniqueKey = this.props.uniqueKey;
+    const dbRef = firebase.database().ref(uniqueKey);
+    dbRef.update({  
+        likes: newLike
+    });
 }
 
     render() {
-
         return (
             <button 
             type="image"
@@ -33,7 +31,7 @@ incrementLikes = () => {
             onClick={this.incrementLikes}
             >
             <img src={Safi} alt="an emoji pic of Safi - the most ridiculous, yet beloved and very handsome instructor at Juno"/>
-            {this.state.likes}
+            {this.props.likes}
             </button>
            
         )
