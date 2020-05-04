@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/traineredith/projectFive/static/css/main.2a9e31f5.chunk.css",
+    "main.js": "/traineredith/projectFive/static/js/main.d83c46d6.chunk.js",
+    "main.js.map": "/traineredith/projectFive/static/js/main.d83c46d6.chunk.js.map",
+    "runtime-main.js": "/traineredith/projectFive/static/js/runtime-main.a1a77a75.js",
+    "runtime-main.js.map": "/traineredith/projectFive/static/js/runtime-main.a1a77a75.js.map",
+    "static/js/2.580bd1bb.chunk.js": "/traineredith/projectFive/static/js/2.580bd1bb.chunk.js",
+    "static/js/2.580bd1bb.chunk.js.map": "/traineredith/projectFive/static/js/2.580bd1bb.chunk.js.map",
+    "index.html": "/traineredith/projectFive/index.html",
+    "precache-manifest.8ee3afcf3bd5602a96b3d113437131e2.js": "/traineredith/projectFive/precache-manifest.8ee3afcf3bd5602a96b3d113437131e2.js",
+    "service-worker.js": "/traineredith/projectFive/service-worker.js",
+    "static/css/main.2a9e31f5.chunk.css.map": "/traineredith/projectFive/static/css/main.2a9e31f5.chunk.css.map",
+    "static/js/2.580bd1bb.chunk.js.LICENSE.txt": "/traineredith/projectFive/static/js/2.580bd1bb.chunk.js.LICENSE.txt",
+    "static/media/juno-logo.svg": "/traineredith/projectFive/static/media/juno-logo.86172252.svg",
+    "static/media/safiEmoji.png": "/traineredith/projectFive/static/media/safiEmoji.9c4a16e7.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a1a77a75.js",
+    "static/js/2.580bd1bb.chunk.js",
+    "static/css/main.2a9e31f5.chunk.css",
+    "static/js/main.d83c46d6.chunk.js"
+  ]
+}
