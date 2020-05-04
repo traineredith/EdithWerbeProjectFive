@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/traineredith/projectFive/static/css/main.2a9e31f5.chunk.css",
-    "main.js": "/traineredith/projectFive/static/js/main.d83c46d6.chunk.js",
-    "main.js.map": "/traineredith/projectFive/static/js/main.d83c46d6.chunk.js.map",
-    "runtime-main.js": "/traineredith/projectFive/static/js/runtime-main.a1a77a75.js",
-    "runtime-main.js.map": "/traineredith/projectFive/static/js/runtime-main.a1a77a75.js.map",
-    "static/js/2.580bd1bb.chunk.js": "/traineredith/projectFive/static/js/2.580bd1bb.chunk.js",
-    "static/js/2.580bd1bb.chunk.js.map": "/traineredith/projectFive/static/js/2.580bd1bb.chunk.js.map",
-    "index.html": "/traineredith/projectFive/index.html",
-    "precache-manifest.8ee3afcf3bd5602a96b3d113437131e2.js": "/traineredith/projectFive/precache-manifest.8ee3afcf3bd5602a96b3d113437131e2.js",
-    "service-worker.js": "/traineredith/projectFive/service-worker.js",
-    "static/css/main.2a9e31f5.chunk.css.map": "/traineredith/projectFive/static/css/main.2a9e31f5.chunk.css.map",
-    "static/js/2.580bd1bb.chunk.js.LICENSE.txt": "/traineredith/projectFive/static/js/2.580bd1bb.chunk.js.LICENSE.txt",
-    "static/media/juno-logo.svg": "/traineredith/projectFive/static/media/juno-logo.86172252.svg",
-    "static/media/safiEmoji.png": "/traineredith/projectFive/static/media/safiEmoji.9c4a16e7.png"
+    "main.css": "/EdithWerbeProjectFive/static/css/main.fa14d22f.chunk.css",
+    "main.js": "/EdithWerbeProjectFive/static/js/main.4a83f530.chunk.js",
+    "main.js.map": "/EdithWerbeProjectFive/static/js/main.4a83f530.chunk.js.map",
+    "runtime-main.js": "/EdithWerbeProjectFive/static/js/runtime-main.db2a54dd.js",
+    "runtime-main.js.map": "/EdithWerbeProjectFive/static/js/runtime-main.db2a54dd.js.map",
+    "static/js/2.4ea10d27.chunk.js": "/EdithWerbeProjectFive/static/js/2.4ea10d27.chunk.js",
+    "static/js/2.4ea10d27.chunk.js.map": "/EdithWerbeProjectFive/static/js/2.4ea10d27.chunk.js.map",
+    "index.html": "/EdithWerbeProjectFive/index.html",
+    "precache-manifest.a3cbc30cb188c0701e2e328aab583a71.js": "/EdithWerbeProjectFive/precache-manifest.a3cbc30cb188c0701e2e328aab583a71.js",
+    "service-worker.js": "/EdithWerbeProjectFive/service-worker.js",
+    "static/css/main.fa14d22f.chunk.css.map": "/EdithWerbeProjectFive/static/css/main.fa14d22f.chunk.css.map",
+    "static/js/2.4ea10d27.chunk.js.LICENSE.txt": "/EdithWerbeProjectFive/static/js/2.4ea10d27.chunk.js.LICENSE.txt",
+    "static/media/juno-logo.svg": "/EdithWerbeProjectFive/static/media/juno-logo.86172252.svg",
+    "static/media/safiEmoji.png": "/EdithWerbeProjectFive/static/media/safiEmoji.9c4a16e7.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.a1a77a75.js",
-    "static/js/2.580bd1bb.chunk.js",
-    "static/css/main.2a9e31f5.chunk.css",
-    "static/js/main.d83c46d6.chunk.js"
+    "static/js/runtime-main.db2a54dd.js",
+    "static/js/2.4ea10d27.chunk.js",
+    "static/css/main.fa14d22f.chunk.css",
+    "static/js/main.4a83f530.chunk.js"
   ]
 }
