@@ -5,7 +5,6 @@ import Input from './components/NameInput';
 import Button from './SubmitBtn';
 import LikeButton from './components/LikeBtn';
 import './App.css';
-import { TextField } from 'material-ui';
 
 class App extends Component {
   constructor() {
@@ -15,7 +14,6 @@ class App extends Component {
       messageTo: '',
       messageFrom: '',
       message: '',
-      // likes: 0
     }
   }
 
@@ -72,15 +70,14 @@ class App extends Component {
       // .val() is a Firebase method that gets us the information we want
       const data = response.val();
       //data is an object, so we iterate through it using a for in loop the message 
-      console.log(data);
       for (let key in data) {
 
         // inside the loop, we push each note to an array we already created inside the .on() function called newState
         // inside the loop, we push each message to an array we already created inside the .on() function called newState
         let currentObj = data[key];
+        console.log("object " + currentObj);
         currentObj['id'] = key;
         newState.unshift(data[key]);
-        console.log(data[key])
       }
       // then, we call this.setState in order to update our component's state using the local array newState
       this.setState({
@@ -125,10 +122,12 @@ class App extends Component {
           {this.state.allMesssages.map((newMessage) => {
             console.log();
             return (
-              <div className="posts">
-                <p className="toPrefix">To: {newMessage.messageTo}</p>
-                <p>{newMessage.message}</p>
-                <p className="fromPrefix">From: {newMessage.messageFrom}</p>
+              <div className="posts"
+              
+               >
+                <p className="toPrefix">Yo, {newMessage.messageTo}</p>
+                <p>"{newMessage.message}"</p>
+                <p className="fromPrefix">Hugs, {newMessage.messageFrom}</p>
                 <LikeButton
                   uniqueKey={newMessage.id}
                   likes={newMessage.likes}
