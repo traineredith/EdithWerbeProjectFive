@@ -75,7 +75,6 @@ class App extends Component {
         // inside the loop, we push each note to an array we already created inside the .on() function called newState
         // inside the loop, we push each message to an array we already created inside the .on() function called newState
         let currentObj = data[key];
-        console.log("object " + currentObj);
         currentObj['id'] = key;
         newState.unshift(data[key]);
       }
@@ -120,10 +119,9 @@ class App extends Component {
 
         <div className="postsBoard" id="postsBoard">
           {this.state.allMesssages.map((newMessage) => {
-            console.log();
             return (
               <div className="posts"
-              
+              key={newMessage.id}
                >
                 <p className="toPrefix">Yo, {newMessage.messageTo}</p>
                 <p>"{newMessage.message}"</p>
@@ -136,6 +134,9 @@ class App extends Component {
             )
           })}
         </div>
+        <footer>
+          <p>Edith Werbel 2020</p>
+        </footer>
       </div>
     )
   }
